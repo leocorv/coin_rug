@@ -1,0 +1,32 @@
+# Environnement virtuel
+venv/
+.env
+.env.*
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers de logs
+*.log
+
+# Notebooks Jupyter
+.ipynb_checkpoints
+
+# Cache et metadata
+.cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Fichiers de l’éditeur
+.vscode/
+.idea/
+*.swp
