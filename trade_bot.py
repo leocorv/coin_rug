@@ -1,6 +1,8 @@
 import os
 import time
 from typing import Dict, List
+
+from dotenv import load_dotenv
 import ccxt
 import pandas as pd
 import ta
@@ -121,6 +123,8 @@ class Trader:
 
 
 def main():
+    # Load environment variables from a `.env` file if present
+    load_dotenv()
     api_key = os.getenv('BINANCE_API_KEY', '')
     api_secret = os.getenv('BINANCE_API_SECRET', '')
     webhook = os.getenv('DISCORD_WEBHOOK_URL', '')

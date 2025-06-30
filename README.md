@@ -24,4 +24,12 @@ Every ten cycles, the bot generates a chart of closing prices for each pair and 
 API keys for Binance should be provided via the environment variables `BINANCE_API_KEY` and `BINANCE_API_SECRET`.
 Set `DISCORD_WEBHOOK_URL` to receive periodic price charts for each coin on Discord.
 
+You can store these variables in a `.env` file and install [python-dotenv](https://pypi.org/project/python-dotenv/) so the script loads them automatically:
+
+```
+BINANCE_API_KEY=your_api_key
+BINANCE_API_SECRET=your_api_secret
+DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/...
+```
+
 This bot is an educational example and should not be used for real trading without further improvements and proper testing.
